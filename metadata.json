@@ -1,0 +1,6 @@
+{
+  "name": "Cursos da Naty",
+  "description": "Escola de confeitaria digital com 21 cursos completos de bolos, doces finos e guias de modelagem para faturamentos reais.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

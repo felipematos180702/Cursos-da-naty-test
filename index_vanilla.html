@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cursos da Naty - Confeitaria Artesanal</title>
+  <!-- Tailwind CSS CDN para Estilização Moderna, Responsiva e Rápida -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts para Tipografia Elegante de Confeitaria Fina -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;0,800;1,600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    h1, h2, h3, .font-serif { font-family: 'Playfair Display', serif; }
+  </style>
+</head>
+<body class="bg-stone-50 text-stone-800 min-h-screen flex flex-col justify-between">
+  <!-- Top Banner de Escassez e Promoção (CRO) -->
+  <div class="bg-gradient-to-r from-rose-500 via-pink-500 to-amber-500 text-white text-xs sm:text-sm font-semibold py-2 px-4 text-center">
+    🍰 PROMOÇÃO EXCLUSIVA: Até 60% OFF em qualquer treinamento - Garanta sua independência financeira hoje!
+  </div>
+
+  <!-- Header -->
+  <header class="bg-white border-b border-rose-100 shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <div class="flex items-center gap-3 cursor-pointer" onclick="window.location.reload()">
+        <div class="w-12 h-12 rounded-full bg-rose-50 border border-rose-100 flex items-center justify-center text-rose-500 text-2xl shadow-inner">🍰</div>
+        <div>
+          <span class="font-serif text-2xl font-bold bg-gradient-to-r from-amber-950 via-rose-700 to-amber-950 bg-clip-text text-transparent">Cursos da Naty</span>
+          <p class="text-[10px] uppercase tracking-widest text-stone-400 font-bold -mt-1">Doçaria & Confeitaria Fina</p>
+        </div>
+      </div>
+      <div class="hidden sm:block text-xs font-semibold text-stone-500">A maior escola de confeitaria digital do país</div>
+    </div>
+  </header>
+
+  <!-- Hero Persuasivo -->
+  <section class="max-w-4xl mx-auto text-center mt-12 mb-16 px-4">
+    <div class="inline-flex items-center gap-1.5 px-3 py-1 bg-rose-50 text-rose-600 rounded-full border border-rose-100 text-xs font-bold mb-4">
+      ⭐ A Maior Escola de Confeitaria Digital
+    </div>
+    <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-amber-950 mb-4 leading-tight">
+      Adoce seu Futuro nos <span class="text-rose-500 italic">Cursos da Naty</span>
+    </h1>
+    <p class="text-stone-600 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto">
+      Descubra receitas profissionais passo a passo que geram produtos de alto valor agregado. Aprenda técnicas avançadas e fature alto cozinhando na sua própria casa.
+    </p>
+  </section>
+
+  <!-- Vitrine Dinâmica -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20 flex-1 w-full">
+    <h2 class="text-xl sm:text-2xl font-bold text-amber-955 mb-6 border-b border-rose-100 pb-3">Nossos Cursos Digitais</h2>
+    
+    <!-- Grid -->
+    <div id="courses-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Inserido dinamicamente via JavaScript -->
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-stone-900 text-stone-300 border-t border-stone-800 py-12 px-4 mt-auto">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <div class="flex items-center gap-2 text-rose-400 text-lg font-bold font-serif mb-4">🍰 Cursos da Naty</div>
+        <p class="text-xs text-stone-400 leading-relaxed">Qualificando confeiteiras no Brasil e no mundo, oferecendo métodos práticos de alto desempenho e estratégias autênticas de vendas de doces.</p>
+      </div>
+      <div>
+        <h3 class="text-white font-semibold text-sm mb-4 uppercase text-rose-300 tracking-wider">Contato & Suporte</h3>
+        <p class="text-xs text-stone-400">E-mail: alunas@cursosdanaty.com<br>WhatsApp: +55 (11) 98888-7777<br>Seg. à Sex., 9h às 18h</p>
+      </div>
+      <div class="bg-stone-950 p-4 rounded-xl border border-stone-800 text-xs">
+        <h4 class="text-amber-500 font-bold mb-2 flex items-center gap-1">🛡️ Satisfação Garantida</h4>
+        <p class="text-stone-400 leading-relaxed">Aproveite nossa garantia incondicional de 7 dias de devolução. Risco zero para você! Se não gostar das aulas, devolvemos seu dinheiro.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script de Processamento Dinâmico -->
+  <script>
+    // Banco de dados simulando cursos de confeitaria
+    const courses = [
+      {
+        id: 1,
+        title: "Segredos do Brigadeiro Gourmet Lucrativo",
+        category: "Doces Clássicos",
+        shortDescription: "Domine o ponto perfeito, receitas exclusivas e as melhores técnicas de vendas para viver desse doce irresistível.",
+        image: "https://images.unsplash.com/photo-1570145820259-b5b80c5c8bd6?q=80&w=600&auto=format&fit=crop",
+        price: "97,00",
+        originalPrice: "297,00",
+        duration: "10 horas",
+        level: "Iniciante"
+      },
+      {
+        id: 2,
+        title: "Macarons Franceses Sem Segredos",
+        category: "Confeitaria Fina",
+        shortDescription: "O passo a passo definitivo para conquistar o macaron perfeito, com o pezinho característico e topo brilhante.",
+        image: "https://images.unsplash.com/photo-1569864358642-9d1684040f43?q=80&w=600&auto=format&fit=crop",
+        price: "147,00",
+        originalPrice: "347,00",
+        duration: "12 horas",
+        level: "Avançado"
+      },
+      {
+        id: 3,
+        title: "Bolos de Casamento de Andar e Estruturação",
+        category: "Bolos Artísticos",
+        shortDescription: "Aprenda a estruturar, nivelar, transportar e decorar verdadeiras esculturas comestíveis com total segurança.",
+        image: "https://images.unsplash.com/photo-1535141192574-5d4897c13636?q=80&w=600&auto=format&fit=crop",
+        price: "197,00",
+        originalPrice: "497,00",
+        duration: "16 horas",
+        level: "Avançado"
+      }
+    ];
+
+    // Renderizador Dinâmico dos Cards de Cursos
+    function renderCourses() {
+      const grid = document.getElementById('courses-grid');
+      if (!grid) return;
+      grid.innerHTML = '';
+
+      courses.forEach(course => {
+        const cardHTML = `
+          <div 
+            class="bg-white rounded-3xl border border-rose-100 shadow-sm hover:shadow-lg hover:border-rose-250 transition-all duration-300 overflow-hidden cursor-pointer flex flex-col justify-between"
+            onclick="goToDetails(${course.id})"
+          >
+            <!-- Capa do Curso -->
+            <div class="relative h-48 overflow-hidden bg-rose-50">
+              <img src="${course.image}" alt="${course.title}" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+              <span class="absolute top-4 left-4 bg-white/90 text-rose-600 text-[10px] font-extrabold uppercase px-3 py-1 rounded-full shadow-xs">
+                ${course.category}
+              </span>
+            </div>
+
+            <!-- Dados Descritivos -->
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="text-lg font-serif font-bold text-amber-955 mb-2 leading-snug">${course.title}</h3>
+                <p class="text-stone-500 text-xs sm:text-sm line-clamp-2">${course.shortDescription}</p>
+              </div>
+
+              <!-- Rodapé do Card -->
+              <div class="mt-6 pt-4 border-t border-stone-100 flex items-center justify-between">
+                <div>
+                  <span class="text-[10px] text-stone-400 font-bold block">Investimento</span>
+                  <div class="flex items-center gap-1">
+                    <span class="text-xs text-stone-450 line-through">R$ ${course.originalPrice}</span>
+                    <span class="text-base font-bold text-stone-900">R$ ${course.price}</span>
+                  </div>
+                </div>
+                <span class="text-[10px] px-2.5 py-1 bg-rose-50 text-rose-500 font-bold rounded-full">${course.duration}</span>
+              </div>
+            </div>
+          </div>
+        `;
+        grid.innerHTML += cardHTML;
+      });
+    }
+
+    // Navegação Dinâmica via Search Parameters do Browser
+    function goToDetails(courseId) {
+      window.location.href = `curso.html?id=${courseId}`;
+    }
+
+    // Inicialização direta do Site
+    document.addEventListener('DOMContentLoaded', renderCourses);
+  </script>
+</body>
+</html>
